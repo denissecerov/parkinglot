@@ -1,15 +1,29 @@
 body {
-  font-family: 'Brush Script MT', cursive;
-  font-size: 16 pt;
-  background-image: url(parkinglot.png);
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
   
 }
 
 .parkingLot {
-  
+  width: 600px;
+    height: 300px;
+    background: url('parkingLot.png') no-repeat center center;
+    background-size: cover;
+    position: relative; 
 }
 
 .car1 {
+  width: 50px;
+    height: 30px;
+    background: url('car.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    bottom: 10px;
+    animation: moveCar1 5s linear ;
   
 }
 
@@ -35,6 +49,20 @@ body {
 }
 
 @keyframes moveCar1 {
+   0% {
+        left: -10px;
+        
+    }
+
+    50% {
+        left: 650px;
+        
+    }
+
+    100% {
+        left: -10px;
+        
+    }
   
 }
 
