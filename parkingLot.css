@@ -10,6 +10,7 @@ body
 
 .parkingLot
 {
+	border: 3px solid red;
 	background: url('parkingLot.png') no-repeat center center;
 	background-size: cover;
 	width: 600px;
@@ -21,36 +22,12 @@ body
 {
 	background: url('car1.png') no-repeat center center;
 	background-size: cover;
-	width: 50px;
-  height: 30px;
-	position: relative;
+	width: 100px;
+    height: 100px;
+	position: relative; top: 120px;
 	animation: moveAndRotate 2s linear forwards, goDown 1s linear 2s forwards;
 }
 
-.car2
-{
-
-}
-
-.car3
-{
-
-}
-
-.car4
-{
-
-}
-
-.car5
-{
-
-}
-
-.car6
-{
-
-}
 
 @keyframes moveAndRotate 
 {
@@ -61,22 +38,18 @@ body
     }
     50% 
     {
-        left: 50%;
+        left: 32%;
         transform: rotate(0deg);
     }
     100% 
     {
-        left: 50%;
+        left: 32%;
         transform: rotate(90deg);
     }
 }
 
 @keyframes goDown 
 {
-    0% 
-    {
-        top: 0;
-    }
     100% 
     {
         top: 200px;
