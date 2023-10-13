@@ -1,91 +1,84 @@
-body {
-  display: flex;
+body 
+{
+  	display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
-  
 }
 
-.parkingLot {
-  width: 600px;
+.parkingLot
+{
+	background: url('parkingLot.png') no-repeat center center;
+	background-size: cover;
+	width: 600px;
     height: 300px;
-    background: url('parkingLot.png') no-repeat center center;
-    background-size: cover;
     position: relative; 
 }
 
-.car1 {
-  width: 50px;
-    height: 30px;
-    background: url('car.png') no-repeat center center;
-    background-size: cover;
-    position: absolute;
-    bottom: 10px;
-    animation: moveCar1 5s linear ;
-  
+.car1
+{
+	background: url('car1.png') no-repeat center center;
+	background-size: cover;
+	width: 50px;
+  height: 30px;
+	position: relative;
+	animation: moveAndRotate 2s linear forwards, goDown 1s linear 2s forwards;
 }
 
-.car2 {
+.car2
+{
 
-  
 }
 
-.car3 {
-  
+.car3
+{
+
 }
 
-.car4 {
-  
+.car4
+{
+
 }
 
-.car5 {
-  
+.car5
+{
+
 }
 
-.car6 {
-  
+.car6
+{
+
 }
 
-@keyframes moveCar1 {
-   0% {
-        left: -10px;
-        
+@keyframes moveAndRotate 
+{
+    0% 
+    {
+        left: 0;
+        transform: rotate(0deg);
     }
-
-    50% {
-        left: 650px;
-        
+    50% 
+    {
+        left: 50%;
+        transform: rotate(0deg);
     }
-
-    100% {
-        left: -10px;
-        
+    100% 
+    {
+        left: 50%;
+        transform: rotate(90deg);
     }
-  
 }
 
-@keyframes moveCar2 {
-    0% {
+@keyframes goDown 
+{
+    0% 
+    {
+        top: 0;
+    }
+    100% 
+    {
+        top: 200px;
+    }
 }
-  
-}
-
-@keyframes moveCar3 {
-  
-}
-
-@keyframes moveCar4 {
-  
-}
-
-@keyframes moveCar5 {
-  
-}
-
-@keyframes moveCar6 {
-  
-}
-
-
