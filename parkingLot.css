@@ -1,11 +1,11 @@
 body 
 {
-  	display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #f0f0f0;
 }
 
 .parkingLot
@@ -13,8 +13,8 @@ body
 	background: url('parkingLot.png') no-repeat center center;
 	background-size: cover;
 	width: 600px;
-    height: 300px;
-    position: relative; 
+	height: 300px;
+	position: relative; 
 }
 
 .car1
@@ -22,7 +22,7 @@ body
 	background: url('car1.png') no-repeat center center;
 	background-size: cover;
 	width: 100px;
-    height: 100px;
+	height: 100px;
 	position: relative; top: 120px;
 	animation: car1-MoveAndRotate 2s linear forwards, car1-goDown 1s linear 2s forwards;
 }
@@ -31,12 +31,22 @@ body
 {
 	background: url('car2.png') no-repeat center center;
 	background-size: cover;
-	width: 100px;
-    height: 100px;
-    position: relative; top: 40px;
-    animation: car2-MoveAndRotate 2s linear 3s forwards, car2-goDown 1s linear 5s forwards;
+	width: 20%;
+	height: 17%;
+	position: relative; top: 40px;
+	animation: car2-MoveAndRotate 3s linear 3s forwards, car2-goDown 1s linear 5s forwards;
 }
 
+.car4
+{
+	background: url('car3.png') no-repeat center center;
+	background-size: cover;
+	width: 15%;
+	height: 12%;
+	position: relative; top: 0px;
+	animation: car3-MoveAndRotate 2s linear 4s forwards, car3-goDown 1s linear 5s forwards;
+	!animation-delay: 6s;
+}
 
 @keyframes car1-MoveAndRotate
 {
@@ -74,12 +84,12 @@ body
     }
     50% 
     {
-        left: 64%;
+        left: 62%;
         transform: rotate(0deg);
     }
     100% 
     {
-        left: 64%;
+        left: 62%;
         transform: rotate(90deg);
     }
 }
@@ -88,6 +98,33 @@ body
 {
     100% 
     {
-        top: 100px;
+        top: 118px;
     }
+}
+
+@keyframes car3-MoveAndRotate
+{
+	0%
+	{
+		left: 0;
+		transform: rotate(0deg);
+	}
+	50%
+	{
+		left: 22%;
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		left: 22%;
+		transform: rotate(-90deg);
+	}
+}
+
+@keyframes car3-goDown
+{
+	100%
+	{
+		top: -110px;
+	}
 }
