@@ -37,7 +37,7 @@ body
 	animation: car2-MoveAndRotate 3s linear 3s forwards, car2-goDown 1s linear 5s forwards;
 }
 
-.car4
+.car3
 {
 	background: url('car3.png') no-repeat center center;
 	background-size: cover;
