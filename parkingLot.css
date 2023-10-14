@@ -41,7 +41,7 @@ main
 	background-size: cover;
 	width: 20%;
 	height: 17%;
-	position: relative; top: 40px; left: -100%;
+	position: relative; top: 40px; left: -200%;
 	animation: car2_LeftAndRotate 5s linear 10s forwards, car2_down 1s linear 15s forwards;
 }
 
@@ -52,22 +52,22 @@ main
 	width: 15%;
 	height: 100px;
 	position: relative; bottom: 50%; left: 43%;
-	animation: car3_down 2s linear 6s forwards, car3_RotateAndLeft 2s linear 8s forwards;
+	animation: car3_downAndRotate 2s linear 6s forwards, car3_Left 2s linear 8s forwards;
 }
 
 .car4
 {
 	background: url('car4.png') no-repeat center center;
 	background-size: cover;
-	width: 15%;
-	height: 12%;
-	position: relative; top: -40px;
-	animation: car4-MoveAndRotate 5s linear 6s forwards, car4-goDown 1s linear 5s forwards;	
+	width: 10%;
+	height: 40%;
+	position: relative; bottom: 23%; left: 46%;
+	animation: car4_upAndRotate 2s linear 8s forwards, car4_Left 2s linear 10s forwards;
 }
 
 @keyframes car1_LeftAndRotate
 {
-    0% {left: -100%; transform: rotate(0deg);}
+    0% {left: -200%; transform: rotate(0deg);}
     50% {left: 32%; transform: rotate(0deg);}     
     100% {left: 32%; transform: rotate(90deg);}
 }
@@ -79,7 +79,7 @@ main
 
 @keyframes car2_LeftAndRotate
 {
-    0% {left: -100%; transform: rotate(0deg);}
+    0% {left: -200%; transform: rotate(0deg);}
     50% {left: 62%; transform: rotate(0deg);}     
     100% {left: 62%; transform: rotate(90deg);}
 }
@@ -89,16 +89,30 @@ main
 	100% {top: 118px;}
 }
 
-@keyframes car3_down 
+@keyframes car3_downAndRotate
 {
 	0% {bottom: 50%; transform: rotate(0deg);}
 	50% {bottom: 25%; transform: rotate(0deg);}
 	100% {bottom: 25%; transform: rotate(90deg);}
 }
 
-@keyframes car3_RotateAndLeft
+@keyframes car3_Left
 {
     0% {left: 43%;}
-    50% {left: -100%;}     
-    100% {left: -100%;}
+    50% {left: -200%;}     
+    100% {left: -200%;}
+}
+
+@keyframes car4_upAndRotate
+{
+	0% {bottom: 23%; transform: rotate(0deg);}
+	50% {bottom: 63%; transform: rotate(0deg);}
+	100% {bottom: 63%; transform: rotate(-90deg);}
+}
+
+@keyframes car4_Left
+{
+    0% {left: 46%;}
+    50% {left: -200%;}     
+    100% {left: -200%;}
 }
