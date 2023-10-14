@@ -48,6 +48,16 @@ body
 	!animation-delay: 6s;
 }
 
+.car4
+{
+	background: url('car4.png') no-repeat center center;
+	background-size: cover;
+	width: 15%;
+	height: 12%;
+	position: relative; top: -40px;
+	animation: car4-MoveAndRotate 5s linear 6s forwards, car4-goDown 1s linear 5s forwards;	
+}
+
 @keyframes car1-MoveAndRotate
 {
     0% 
@@ -126,5 +136,32 @@ body
 	100%
 	{
 		top: -110px;
+	}
+}
+
+@keyframes car4-MoveAndRotate
+{
+	0%
+	{
+		left: 0;
+		transform: rotate(0deg);
+	}
+	50%
+	{
+		left: 75%;
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		left: 75%;
+		transform: rotate(-90deg);
+	}
+}
+
+@keyframes car4-goDown
+{
+	100%
+	{
+		top: -155px;
 	}
 }
