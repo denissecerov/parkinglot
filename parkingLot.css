@@ -8,6 +8,14 @@ body
 	background-color: #f0f0f0;
 }
 
+main
+{
+	background-color: #64606c;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
 .parkingLot
 {
 	background: url('parkingLot.png') no-repeat center center;
@@ -24,7 +32,7 @@ body
 	width: 100px;
 	height: 100px;
 	position: relative; top: 120px;
-	animation: car1_LeftAndRotate 2s linear forwards, car1_down 1s linear 2s forwards;
+	animation: car1_LeftAndRotate 5s linear forwards, car1_down 1s linear 5s forwards;
 }
 
 .car2
@@ -33,8 +41,8 @@ body
 	background-size: cover;
 	width: 20%;
 	height: 17%;
-	position: relative; top: 40px;
-	animation: car2_LeftAndRotate 2s linear 3s forwards, car2_down 1s linear 5s forwards;
+	position: relative; top: 40px; left: -100%;
+	animation: car2_LeftAndRotate 5s linear 10s forwards, car2_down 1s linear 15s forwards;
 }
 
 .car3
@@ -59,7 +67,7 @@ body
 
 @keyframes car1_LeftAndRotate
 {
-    0% {left: 0; transform: rotate(0deg);}
+    0% {left: -100%; transform: rotate(0deg);}
     50% {left: 32%; transform: rotate(0deg);}     
     100% {left: 32%; transform: rotate(90deg);}
 }
@@ -71,7 +79,7 @@ body
 
 @keyframes car2_LeftAndRotate
 {
-    0% {left: 0; transform: rotate(0deg);}
+    0% {left: -100%; transform: rotate(0deg);}
     50% {left: 62%; transform: rotate(0deg);}     
     100% {left: 62%; transform: rotate(90deg);}
 }
@@ -91,6 +99,6 @@ body
 @keyframes car3_RotateAndLeft
 {
     0% {left: 43%;}
-    50% {left: 0;}     
-    100% {left: 0;}
+    50% {left: -100%;}     
+    100% {left: -100%;}
 }
