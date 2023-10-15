@@ -49,10 +49,10 @@ main
 {
 	background: url('car3.png') no-repeat center center;
 	background-size: cover;
-	width: 15%;
-	height: 100px;
-	position: relative; bottom: 50%; left: 43%;
-	animation: car3_downAndRotate 2s linear 6s forwards, car3_Left 2s linear 8s forwards;
+	width: 10%;
+	height: 30%;
+	position: relative; bottom: 50%; left: 46%;
+	animation: car3_downAndRotate 2s linear 6s forwards, car3_Left 6s linear 8s forwards;
 }
 
 .car4
@@ -61,8 +61,8 @@ main
 	background-size: cover;
 	width: 10%;
 	height: 40%;
-	position: relative; bottom: 23%; left: 46%;
-	animation: car4_upAndRotate 2s linear 8s forwards, car4_Left 2s linear 10s forwards;
+	position: relative; bottom: 19%; left: 46%;
+	animation: car4_upAndRotate 2s linear 8s forwards, car4_Left 6s linear 10s forwards;
 }
 
 @keyframes car1_LeftAndRotate
