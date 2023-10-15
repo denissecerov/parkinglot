@@ -25,6 +25,7 @@ main
 	position: relative; 
 }
 
+/*Cars*/
 .car1
 {
 	background: url('car1.png') no-repeat center center;
@@ -32,7 +33,7 @@ main
 	width: 100px;
 	height: 100px;
 	position: relative; top: 120px;
-	animation: car1_LeftAndRotate 5s linear forwards, car1_down 1s linear 5s forwards;
+	animation: car1_LeftAndRotate 4s linear forwards, car1_down 1s linear 4s forwards;
 }
 
 .car2
@@ -65,6 +66,39 @@ main
 	animation: car4_upAndRotate 2s linear 8s forwards, car4_Left 6s linear 10s forwards;
 }
 
+#car5
+{
+	width: 16%;
+	height: 16%;
+	transform: rotate(90deg);
+	position: relative; bottom: 400px; left: 320px;
+}
+
+#car6
+{
+	width: 16%;
+	height: 16%;
+	transform: rotate(-90deg);
+	position: relative; bottom: 133%; left: 47%;
+	animation: car6_downAndRotate 2s linear forwards, car6_Left 4s linear 4s forwards; 
+}
+
+#car7
+{
+	width: 110px;
+	height: 110px;
+	position: relative; bottom: 170px; left: 235px;
+}
+
+#car8
+{
+	width: 110px;
+	height: 80px;
+	transform: rotate(90deg);
+	position: relative; bottom: 380px; left: 115px;
+}
+
+/*Animations*/
 @keyframes car1_LeftAndRotate
 {
     0% {left: -200%; transform: rotate(0deg);}
@@ -113,6 +147,20 @@ main
 @keyframes car4_Left
 {
     0% {left: 46%;}
+    50% {left: -200%;}     
+    100% {left: -200%;}
+}
+
+@keyframes car6_downAndRotate
+{
+	0% {bottom: 133%; transform: rotate(-90deg);}
+	50% {bottom: 110%; transform: rotate(-90deg);}
+	100% {bottom: 110%; transform: rotate(-180deg);}
+}
+
+@keyframes car6_Left
+{
+    0% {left: 47%;}
     50% {left: -200%;}     
     100% {left: -200%;}
 }
