@@ -1,11 +1,13 @@
-body 
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	margin: 0;
-	background-color: #f0f0f0;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(qmYxR.png); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
 main
@@ -163,4 +165,32 @@ main
     0% {left: 47%;}
     50% {left: -200%;}     
     100% {left: -200%;}
+}
+
+
+.parking-sign {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #FF5733, #FFD700, #00FF00, #0000FF, #800080, #FF5733);
+    background-size: 1200% 100%;
+    animation: flashing 3s linear infinite;
+}
+
+.flashing-text {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+@keyframes flashing {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }

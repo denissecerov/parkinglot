@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title> Team 7 | Parking Lot </title>
-		<link rel="stylesheet" href="parkingLot.css">
-	</head>
+<head>
+    <meta charset="utf-8">
+    <title>Team 7 | Parking Lot</title>
+    <link rel="stylesheet" href="parkingLot.css">
+    <style>
+       
+        .parking-sign {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(90deg, #FF5733, #FFD700, #00FF00, #0000FF, #800080, #FF5733);
+            background-size: 1200% 100%;
+            animation: flashing 3s linear infinite;
+        }
 
-	<body>
-		<main>
-			<div class="parkingLot">
-				<div class="car1"></div>
-				<div class="car2"></div>
-				<div class="car3"></div>
-				<div class="car4"></div>
-				<img src="car5.png" alt="car5" id="car5">
-				<img src="car6.png" alt="car6" id="car6">
-				<img src="car7.png" alt="car7" id="car7">
-				<img src="car8.png" alt="car8" id="car8">
-			</div>
-		</main>
-	</body>
- </html>
+        .flashing-text {
+            font-size: 24px;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            text-transform: uppercase;
+			font-family: Arial
+        }
+
+        
+        @keyframes flashing {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parking-sign">
+        <div class="flashing-text">
+            PARKING LOT
+        </div>
+    </div>
+    <main>
+        <div class="parkingLot">
+            <div class="car1"></div>
+            <div class="car2"></div>
+            <div class="car3"></div>
+            <div class="car4"></div>
+            <img src="car5.png" alt="car5" id="car5">
+            <img src="car6.png" alt="car6" id="car6">
+            <img src="car7.png" alt="car7" id="car7">
+            <img src="car8.png" alt="car8" id="car8">
+        </div>
+    </main>
+</body>
+</html>
