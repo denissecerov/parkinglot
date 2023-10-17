@@ -18,9 +18,27 @@ main
 	width: 100%;
 }
 
+.parking-sign {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #FF5733, #FFD700, #00FF00, #0000FF, #800080, #FF5733);
+    background-size: 1200% 100%;
+    animation: flashing 3s linear infinite;
+}
+
+.flashing-text {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
 .parkingLot
 {
-	background: url('parkingLot.png') no-repeat center center;
+	background: url('parkinglot.png') no-repeat center center;
 	background-size: cover;
 	width: 600px;
 	height: 300px;
@@ -72,8 +90,8 @@ main
 {
 	width: 16%;
 	height: 16%;
-	transform: rotate(90deg);
-	position: relative; bottom: 400px; left: 320px;
+	position: relative; bottom: 92%; left: -200%;
+	animation: car5_leftAndRotate 4s linear 15s forwards, car5_Up 1s linear 19s forwards;
 }
 
 #car6
@@ -153,6 +171,18 @@ main
     100% {left: -200%;}
 }
 
+@keyframes car5_leftAndRotate
+{
+	0% {left: -200%; transform: rotate(0deg);}
+    50% {left: 53.5%; transform: rotate(0deg);}     
+    100% {left: 53.5%; transform: rotate(-90deg);}
+}
+
+@keyframes car5_Up
+{
+	100% {bottom: 133%;}
+}
+
 @keyframes car6_downAndRotate
 {
 	0% {bottom: 133%; transform: rotate(-90deg);}
@@ -165,25 +195,6 @@ main
     0% {left: 47%;}
     50% {left: -200%;}     
     100% {left: -200%;}
-}
-
-
-.parking-sign {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(90deg, #FF5733, #FFD700, #00FF00, #0000FF, #800080, #FF5733);
-    background-size: 1200% 100%;
-    animation: flashing 3s linear infinite;
-}
-
-.flashing-text {
-    font-size: 24px;
-    text-align: center;
-    color: white;
-    padding: 10px;
-    text-transform: uppercase;
 }
 
 @keyframes flashing {
